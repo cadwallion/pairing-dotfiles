@@ -52,8 +52,14 @@ inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
 map <Leader>w <Esc>:w<CR>
-map <Leader>t <Esc>:CommandT<CR>
-map <Leader>f <Esc>:CommandTFlush<CR>
+
+" easy pane movement
+map <C--> <C-W>-
+map <C-+> <C-W>+
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
 
 nmap <Leader>1 1gt
 nmap <Leader>2 2gt
