@@ -2,7 +2,9 @@ setw -g mode-keys vi
 
 unbind C-b
 set -g prefix M-e
+set -g prefix2 C-a
 bind M-e send-prefix
+bind C-a send-prefix
 
 set -sg escape-time 0
 
@@ -48,3 +50,20 @@ set -g visual-activity on
 set -g set-titles on
 set -g set-titles-string '#S: #W'
 setw -g automatic-rename
+
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind    Up resize-pane -U
+bind  Down resize-pane -D
+bind  Left resize-pane -L
+bind Right resize-pane -R
+
+bind \ split-window -h
+bind - split-window -v
+bind = select-layout even-horizontal
+bind + select-layout even-vertical
+bind n next-window
+bind p previous-window
