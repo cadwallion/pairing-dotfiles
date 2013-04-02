@@ -1,4 +1,4 @@
-completion=/usr/local/etc/bash_completion.d/git-completion.bash
+completion='$(brew --prefix)/share/zsh/site-functions/_git'
 
 if test -f $completion
 then
