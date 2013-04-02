@@ -11,7 +11,7 @@ task :install do
       next unless decision
     end
 
-    symlink link, target
+    sym link, target
   end
 end
 
@@ -61,8 +61,8 @@ def restore file
   `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"`
 end
 
-def symlink link, target
-  `ln -s "$PWD/#{link}" "#{target}"`
+def sym link, target
+  FileUtils.ln_s "#{ENV['PWD']}/#{link}", target
 end
 
 task default: 'install'
