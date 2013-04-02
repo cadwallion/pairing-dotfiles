@@ -1,4 +1,4 @@
-iset t_Co=256
+set t_Co=256
 colorscheme railscasts
 set noswapfile
 
@@ -31,9 +31,6 @@ filetype indent on      " load indent file for specific file type
 
 " lead with ,
 let mapleader = ","
-
-C>
-
 
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
